@@ -32,7 +32,7 @@
         -moz-transform: translateY(20px);
         -ms-transform: translateY(20px);
         -o-transform: translateY(20px);
-}
+    }
 
     .banner_left h1 {
         font-size: 48px;
@@ -75,9 +75,9 @@
 
 /* // Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    header {
+    /* header {
         position: relative;
-    }
+    } */
 
     header .navbar {
         position: absolute;
@@ -86,7 +86,9 @@
         width: 100%;
         z-index: 99;
     }
-
+    header.sticky .navbar {
+        background: #26BE9F;
+    }
     #navbarSupportedContent {
         background: #0F4332;
         width: 100%;
@@ -150,7 +152,7 @@
         -moz-transform: translateY(20px);
         -ms-transform: translateY(20px);
         -o-transform: translateY(20px);
-}
+    }
 
     .banner_left h1 {
         font-size: 48px;
@@ -231,7 +233,7 @@
 /* // Small devices (landscape phones, less than 768px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     header {
-        position: relative;
+        /* position: relative; */
     }
 
     header .navbar {
@@ -240,6 +242,9 @@
         left: 0;
         width: 100%;
         z-index: 99;
+    }
+    header.sticky .navbar {
+        background: #26BE9F;
     }
 
     #navbarSupportedContent {
@@ -416,7 +421,7 @@
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     header {
-        position: relative;
+        /* position: relative; */
     }
 
     header .navbar {
@@ -426,7 +431,9 @@
         width: 100%;
         z-index: 99;
     }
-
+    header.sticky .navbar {
+        background: #26BE9F;
+    }
     #navbarSupportedContent {
         background: #0F4332;
         width: 100%;
@@ -460,7 +467,7 @@
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
         -o-transition: all .3s linear;
-}
+    }
 
     .main_menu li a:hover {
         color: #10C98F !important;
@@ -509,11 +516,18 @@
         font-size: 16px;
         width: 265px;
     }
-
+    .banner_right {
+        padding: 45px 0px 35px 0px;
+    }
     .b_r_title h3 {
         font-size: 24px;
     }
-
+    .banner_form {
+        padding: 0 15px;
+    }
+    .banner_form p {
+        padding: 0 15px;
+    }
     .solution {
         padding: 70px 0;
     }
